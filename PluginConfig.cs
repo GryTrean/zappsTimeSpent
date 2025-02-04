@@ -11,12 +11,6 @@ public class PluginConfig : BasePluginConfig
     [JsonPropertyName("Command Settings")]
     public CommandSettings CommandSettings { get; set; } = new CommandSettings();
 
-    [JsonPropertyName("Server IP address")]
-    public string ServerIP { get; set; } = "127.0.0.1";
-
-    [JsonPropertyName("Server Name")]
-    public string ServerName { get; set; } = "My server";
-
     [JsonPropertyName("Time interval")]
     public int TimeInterval { get; set; } = 60;
 
