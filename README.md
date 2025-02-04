@@ -60,3 +60,8 @@ The following dependencies are required for the plugin to work correctly:
 The config file gets automatically generated on first plugin start.
 
 The plugin saves player data to the database when a player disconnects from the server. It keeps track of the current session time and only saves it to the database when the player disconnects from the server to reduce the amount of SQL queries. However, in case of server crashes, a "Force save Data Interval" config is included which is the time, in seconds, between each forced save of all players online. This is added to reduce the chance lost data if the server were to crash or otherwise cause a player to disconnect without firing the Player Disconnect event through CSSharp.
+
+### INSTALLATION INSTRUCTIONS
+1. Download the newest release
+2. Place the contents of the downloaded files to the csgo/addons/counterstrikesharp/plugins folder
+3. Restart the server or load the plugin using css_plugins load zappsTimeSpent
